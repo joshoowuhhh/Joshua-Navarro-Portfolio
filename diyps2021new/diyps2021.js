@@ -71,7 +71,7 @@ image(lightwood, mouseX, mouseY, 55, 55);
   image(dog, mouseX, mouseY, 60, 60);
   } else if (toolChoice == '8') {
 
-   image(sugarcane, mouseX, mouseY, 65, 65);
+   image(sugarcane, mouseX, mouseY, 70, 70);
   } else if (toolChoice == '9') {
 
       image(crafting, mouseX, mouseY, 60, 60);
