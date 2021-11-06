@@ -6,20 +6,26 @@ var bed;
 var door;
 var sugarcane;
 var crafting;
+var furnace;
+var cobbelstone;
 var initials ='jn'; // your initials
 var choice = '1'; // starting choice, so it is not empty
 
 function preload() {
 // preload() runs once, it may make you wait
    grass = loadImage('minecraftitems/grass.jpg');// cat.jpg needs to be next to this .js file
-    lightwood = loadImage('minecraftitems/lightwood.jpg');
-     birchwood = loadImage('minecraftitems/birchwood.jpg');
-     darktree = loadImage('minecraftitems/darktree.jpg');
-     bed = loadImage('minecraftitems/bed.jpg');
-     door = loadImage('minecraftitems/door.jpg');
-      dog = loadImage('minecraftitems/dog.jpg');
-       sugarcane = loadImage('minecraftitems/sugarcane.jpg');
-            crafting = loadImage('minecraftitems/crafting.jpg');
+   lightwood = loadImage('minecraftitems/lightwood.jpg');
+   birchwood = loadImage('minecraftitems/birchwood.jpg');
+   darktree = loadImage('minecraftitems/darktree.jpg');
+   bed = loadImage('minecraftitems/bed.jpg');
+   door = loadImage('minecraftitems/door.jpg');
+   dog = loadImage('minecraftitems/dog.jpg');
+   sugarcane = loadImage('minecraftitems/sugarcane.jpg');
+   crafting = loadImage('minecraftitems/crafting.jpg');
+   furnace = loadImage('minecraftitems/furnace.jpg');
+   cobbelstone = loadImage('minecraftitems/cobbelstone.jpg');
+
+
 
 
 // you can link to an image on your github account
@@ -55,7 +61,7 @@ image(lightwood, mouseX, mouseY, 55, 55);
   } else if (toolChoice == '3') { // third tool
 
   image(birchwood, mouseX, mouseY, 55, 55);
-  } else if (toolChoice == '4') {2
+  } else if (toolChoice == '4') {
 
   image(darktree, mouseX, mouseY, 55, 55);
   } else if (key == '5') { // this tool calls a function
@@ -76,10 +82,12 @@ image(lightwood, mouseX, mouseY, 55, 55);
 
       image(crafting, mouseX, mouseY, 60, 60);
   } else if (toolChoice == '0') {
-    stroke(0, 0);
-    fill(random(255), random(255), random(255), random(255));
-    rect(mouseX, mouseY, 200, 150);
+   
+          image(furnace, mouseX, mouseY, 60, 60);
+  } else if (toolChoice == '0') {
     
+    image(cobbelstone, mouseX, mouseY, 60, 60);
+ 
   }
  }
  
