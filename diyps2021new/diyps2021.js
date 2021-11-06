@@ -72,7 +72,7 @@ image(crafting, mouseX, mouseY, 50, 50);
 } else if (toolChoice == '0') {
    image(furnace, mouseX, mouseY, 50, 50);
  
-} else if (toolChoice == 'c') {
+} else if (key == 'c' || key == 'C') {
     image(cobbelstone, mouseX, mouseY, 50, 50);
  
   }
