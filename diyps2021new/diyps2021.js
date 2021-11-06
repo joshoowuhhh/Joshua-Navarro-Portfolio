@@ -27,31 +27,28 @@ function preload() {
 }
 
 function setup() {
-createCanvas(600, 400);  // canvas size
-background(0, 128, 255);   // use our background screen color
+createCanvas(600, 400);
+background(0, 128, 255);
 }
 
 function draw() {
   if (keyIsPressed) {
-    choice = key; // set choice to the key that was pressed
-    clear_print(); // check to see if it is clear s1creen or save image
+    choice = key;
+    clear_print();
   }
   if (mouseIsPressed){
-    newkeyChoice(choice);  // if the mouse is pressed call newkeyChoice
+    newkeyChoice(choice);
   }
 }
-function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
-  // the key mapping if statements that you can change to do anything you want.
-  // just make sure each key option has the a stroke or fill and then what type of 
-  // graphic function
+function newkeyChoice(toolChoice) {
 
- if (toolChoice == '1' ) {  // first tool
+ if (toolChoice == '1' ) {
  image(grass, mouseX, mouseY, 55, 55);
     
- } else if (toolChoice == '2') { // second toolx
+ } else if (toolChoice == '2') {
  image(lightwood, mouseX, mouseY, 55, 55);
   
- } else if (toolChoice == '3') { // third tool
+ } else if (toolChoice == '3') {
 image(birchwood, mouseX, mouseY, 55, 55);
   
 } else if (toolChoice == '4') {
@@ -75,15 +72,13 @@ image(crafting, mouseX, mouseY, 60, 60);
 } else if (toolChoice == '0') {
    image(furnace, mouseX, mouseY, 60, 60);
  
-} else if (toolChoice == 'f') {
+} else if (toolChoice == 'c') {
     image(cobbelstone, mouseX, mouseY, 60, 60);
  
   }
  }
  
 function testbox(r, g, b) {
-// this is a test function that will show you how you can put your own functions into the sketch
-  x = mouseX;
   y = mouseY;
   fill(r, g, b);
   rect(x-50, y-50, 100, 100);
@@ -91,19 +86,15 @@ function testbox(r, g, b) {
 }
 
 function clear_print() {
-// this will do one of two things, x clears the screen by resetting the background
-// p calls the routine saveme, which saves a copy of the screen
   if (key == 'x' || key == 'X') {
-    background(0, 128, 255); // set the screen back to the background color
+    background(0, 128, 255);
   } else if (key == 'p' || key == 'P') {
-     saveme();  // call saveme which saves an image of the screen
-     key = ""; // reset the key so that it doesn't keep taking screenshots
+     saveme();
+     key = "";
   }
 }
 
 function saveme(){
-    //this will save the name as the intials, date, time and a millis counting number.
-    // it will always be larger in value then the last one.
     filename=initials+day() + hour() + minute() +second();
     saveCanvas(filename, 'jpg');
  // }
