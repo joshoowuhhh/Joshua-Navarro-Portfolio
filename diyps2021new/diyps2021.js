@@ -43,22 +43,22 @@ function draw() {
 function newkeyChoice(toolChoice) {
 
  if (toolChoice == '1' ) {
- image(grass, mouseX, mouseY, 55, 55);
+ image(grass, mouseX, mouseY, 50, 50);
     
  } else if (toolChoice == '2') {
- image(lightwood, mouseX, mouseY, 55, 55);
+ image(lightwood, mouseX, mouseY, 50, 50);
   
  } else if (toolChoice == '3') {
-image(birchwood, mouseX, mouseY, 55, 55);
+image(birchwood, mouseX, mouseY, 50, 50);
   
 } else if (toolChoice == '4') {
-image(darktree, mouseX, mouseY, 55, 55);
+image(darktree, mouseX, mouseY, 50, 50);
   
 } else if (key == '5') {
-image(bed, mouseX, mouseY, 110, 110);
+image(bed, mouseX, mouseY, 90, 90);
   
 } else if (toolChoice == '6') {
-image(door, mouseX, mouseY, 130, 130);
+image(door, mouseX, mouseY, 115, 115);
   
 } else if (toolChoice == '7') {
 image(torch, mouseX, mouseY, 60, 60);
@@ -67,13 +67,13 @@ image(torch, mouseX, mouseY, 60, 60);
 image(sugarcane, mouseX, mouseY, 70, 70);
   
 } else if (toolChoice == '9') {
-image(crafting, mouseX, mouseY, 60, 60);
+image(crafting, mouseX, mouseY, 50, 50);
   
 } else if (toolChoice == '0') {
-   image(furnace, mouseX, mouseY, 60, 60);
+   image(furnace, mouseX, mouseY, 50, 50);
  
 } else if (toolChoice == 'c') {
-    image(cobbelstone, mouseX, mouseY, 60, 60);
+    image(cobbelstone, mouseX, mouseY, 50, 50);
  
   }
  }
