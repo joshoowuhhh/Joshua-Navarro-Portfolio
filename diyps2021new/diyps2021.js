@@ -4,33 +4,26 @@ var birchwood;
 var darktree;
 var bed;
 var door;
-var doggy;
+var torch;
 var sugarcane;
 var crafting;
 var furnace;
 var cobbelstone;
-var initials ='jn'; // your initials
-var choice = '1'; // starting choice, so it is not empty
+var initials ='jn';
+var choice = '1'; 
 
 function preload() {
-// preload() runs once, it may make you wait
-   grass = loadImage('minecraftitems/grass.jpg');// cat.jpg needs to be next to this .js file
+   grass = loadImage('minecraftitems/grass.jpg');
    lightwood = loadImage('minecraftitems/lightwood.jpg');
    birchwood = loadImage('minecraftitems/birchwood.jpg');
    darktree = loadImage('minecraftitems/darktree.jpg');
    bed = loadImage('minecraftitems/bed.jpg');
    door = loadImage('minecraftitems/door.jpg');
-   doggy = loadImage('minecraftitems/doggy.jpg');
+   torch = loadImage('minecraftitems/torch.gif');
    sugarcane = loadImage('minecraftitems/sugarcane.jpg');
    crafting = loadImage('minecraftitems/crafting.jpg');
    furnace = loadImage('minecraftitems/furnace.jpg');
    cobbelstone = loadImage('minecraftitems/cobbelstone.jpg');
-
-
-
-
-// you can link to an image on your github account
-// img = loadImage('https://dma-git.github.io/images/74.png');
 }
 
 function setup() {
@@ -53,40 +46,36 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
   // graphic function
 
  if (toolChoice == '1' ) {  // first tool
-   
-   image(grass, mouseX, mouseY, 55, 55);
+ image(grass, mouseX, mouseY, 55, 55);
     
-  } else if (toolChoice == '2') { // second toolx
-
-image(lightwood, mouseX, mouseY, 55, 55);
-  } else if (toolChoice == '3') { // third tool
-
-  image(birchwood, mouseX, mouseY, 55, 55);
-  } else if (toolChoice == '4') {
-
-  image(darktree, mouseX, mouseY, 55, 55);
-  } else if (key == '5') { // this tool calls a function
-   image(bed, mouseX, mouseY, 110, 110);
-    
- // make testbox do something!
- //   line(mouseX, mouseY, pmouseX, pmouseY);
-  } else if (toolChoice == '6') {
-
-  image(door, mouseX, mouseY, 130, 130);
-  } else if (toolChoice == '7') {
-
-  image(dog, mouseX, mouseY, 60, 60);
-  } else if (toolChoice == '8') {
-
-   image(sugarcane, mouseX, mouseY, 70, 70);
-  } else if (toolChoice == '9') {
-
-      image(crafting, mouseX, mouseY, 60, 60);
-  } else if (toolChoice == '0') {
-   
-          image(furnace, mouseX, mouseY, 60, 60);
-  } else if (toolChoice == '0') {
-    
+ } else if (toolChoice == '2') { // second toolx
+ image(lightwood, mouseX, mouseY, 55, 55);
+  
+ } else if (toolChoice == '3') { // third tool
+image(birchwood, mouseX, mouseY, 55, 55);
+  
+} else if (toolChoice == '4') {
+image(darktree, mouseX, mouseY, 55, 55);
+  
+} else if (key == '5') {
+image(bed, mouseX, mouseY, 110, 110);
+  
+} else if (toolChoice == '6') {
+image(door, mouseX, mouseY, 130, 130);
+  
+} else if (toolChoice == '7') {
+image(torch, mouseX, mouseY, 60, 60);
+ 
+} else if (toolChoice == '8') {
+image(sugarcane, mouseX, mouseY, 70, 70);
+  
+} else if (toolChoice == '9') {
+image(crafting, mouseX, mouseY, 60, 60);
+  
+} else if (toolChoice == '0') {
+   image(furnace, mouseX, mouseY, 60, 60);
+ 
+} else if (toolChoice == 'f') {
     image(cobbelstone, mouseX, mouseY, 60, 60);
  
   }
@@ -95,7 +84,7 @@ image(lightwood, mouseX, mouseY, 55, 55);
 function testbox(r, g, b) {
 // this is a test function that will show you how you can put your own functions into the sketch
   x = mouseX;
-  y = mouseY;0
+  y = mouseY;
   fill(r, g, b);
   rect(x-50, y-50, 100, 100);
 
