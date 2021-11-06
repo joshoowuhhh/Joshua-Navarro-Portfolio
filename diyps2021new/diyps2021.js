@@ -4,6 +4,7 @@ var birchwood;
 var darktree;
 var bed;
 var door;
+var doggy;
 var sugarcane;
 var crafting;
 var furnace;
@@ -19,7 +20,7 @@ function preload() {
    darktree = loadImage('minecraftitems/darktree.jpg');
    bed = loadImage('minecraftitems/bed.jpg');
    door = loadImage('minecraftitems/door.jpg');
-   dog = loadImage('minecraftitems/dog.jpg');
+   doggy = loadImage('minecraftitems/doggy.jpg');
    sugarcane = loadImage('minecraftitems/sugarcane.jpg');
    crafting = loadImage('minecraftitems/crafting.jpg');
    furnace = loadImage('minecraftitems/furnace.jpg');
