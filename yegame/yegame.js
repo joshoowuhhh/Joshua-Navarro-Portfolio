@@ -60,7 +60,7 @@ function draw() {
     if(gameState == "L8"){
     levelEight();
   }
-        if(gameState == "Win"){
+     if(gameState == "L9"){
     Win();
   }
   text(("Ye Symbols Collected: " + score),width/2,40);
@@ -214,8 +214,8 @@ function levelEight(){
     ballSize = ballSize - 1 ;
   }
   
-  if(score>= 40){
-    gameState = "Win";
+  if(score>= 35){
+    gameState = "L9";
   }
   //line(ballx,bally, mouseX, mouseY);
   image(dondaye,ballx,bally, ballSize, ballSize);
@@ -227,5 +227,4 @@ function Win(){
   fill(255, 255, 255);
   textSize(25);
  text("Happy Ye! You win!", width/2,height-20);
-  
 }
