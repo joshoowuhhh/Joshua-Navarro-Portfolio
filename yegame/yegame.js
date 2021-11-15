@@ -22,6 +22,7 @@ function preload(){
  pabloye = loadImage('https://joshoowuhhh.github.io/ye/pabloyee.png');
  donda = loadImage('https://joshoowuhhh.github.io/ye/donda.jpg');
  dondaye = loadImage('https://joshoowuhhh.github.io/ye/dondaye.png');
+ happyye = loadImage('https://joshoowuhhh.github.io/ye/kanyesmile.gif');
 }
 
 
@@ -58,6 +59,9 @@ function draw() {
   }   
     if(gameState == "L8"){
     levelEight();
+  }
+        if(gameState == "Happy Ye! You win!"){
+    Win();
   }
   text(("Ye Symbols Collected: " + score),width/2,40);
 } // end of draw ===================================
@@ -210,10 +214,18 @@ function levelEight(){
     ballSize = ballSize - 1 ;
   }
   
-  if(score>= 35){
+  if(score>= 40){
     gameState = "L8";
   }
   //line(ballx,bally, mouseX, mouseY);
   image(dondaye,ballx,bally, ballSize, ballSize);
   
 } // end of Level 8 ================================
+
+function Win(){
+  background(happyye);
+  fill(255, 255, 255);
+  textSize(25);
+ text("Happy Ye! You win!", width/2,height-20);
+  
+}
