@@ -61,7 +61,7 @@ function draw() {
     levelEight();
   }
      if(gameState == "L9"){
-    Win();
+    win();
   }
   text(("Ye Symbols Collected: " + score),width/2,40);
 } // end of draw ===================================
@@ -222,7 +222,7 @@ function levelEight(){
   
 } // end of Level 8 ================================
 
-function Win(){
+function win(){
   background(happyye);
   fill(255, 255, 255);
   textSize(25);
