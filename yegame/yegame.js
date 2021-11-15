@@ -215,7 +215,7 @@ function levelEight(){
   }
   
   if(score>= 40){
-    gameState = "L8";
+    gameState = "Happy Ye! You win!";
   }
   //line(ballx,bally, mouseX, mouseY);
   image(dondaye,ballx,bally, ballSize, ballSize);
