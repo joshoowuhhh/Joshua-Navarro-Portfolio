@@ -225,6 +225,5 @@ function levelEight(){
 function win(){
   background(happyye);
   fill(255, 255, 255);
-  textSize(25);
  text("Happy Ye! You win!", width/2,height-20);
 }
