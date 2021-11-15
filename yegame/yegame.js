@@ -60,7 +60,7 @@ function draw() {
     if(gameState == "L8"){
     levelEight();
   }
-        if(gameState == "Happy Ye! You win!"){
+        if(gameState == "Win"){
     Win();
   }
   text(("Ye Symbols Collected: " + score),width/2,40);
